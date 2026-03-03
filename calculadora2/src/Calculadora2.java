@@ -3,34 +3,36 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Calculadora1 extends JFrame implements ActionListener {
+public class Calculadora2 extends JFrame implements ActionListener {
 
-        private final JPanel panelDatos;
+        private final JPanel panelDatos, panelResolver;
         private final JTextField a, b ,c;
         private final JLabel parte1, parte2, parte3, resultado;
         private final JButton resolver;
 
-    public Calculadora1() {
-        setSize(1000,600);
+    public Calculadora2() {
+        setSize(600,300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(3,1));
 
         panelDatos = new JPanel();
-        panelDatos.setLayout(new GridLayout(1, 6));
+        panelDatos.setLayout(new FlowLayout(FlowLayout.CENTER));
 
-        a = new JTextField();
-        a.setSize(100,50);
+
+        a = new JTextField(8);
 
         parte1 = new JLabel("x^2");
 
-        b = new JTextField();
+        b = new JTextField(8);
 
         parte2 = new JLabel("x +");
 
-        c = new JTextField();
+        c = new JTextField(8);
 
         parte3 = new JLabel(" = 0");
 
+        panelResolver = new JPanel();
+        panelResolver.setLayout(new FlowLayout(FlowLayout.CENTER));
         resolver = new JButton("RESOLVER");
         resolver.addActionListener(this);
 
@@ -42,8 +44,9 @@ public class Calculadora1 extends JFrame implements ActionListener {
         panelDatos.add(parte2);
         panelDatos.add(c);
         panelDatos.add(parte3);
+        panelResolver.add(resolver);
         this.add(panelDatos);
-        this.add(resolver);
+        this.add(panelResolver);
         this.add(resultado);
 
     }

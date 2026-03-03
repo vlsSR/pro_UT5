@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Calculadora0 extends JFrame implements ActionListener {
+public class Calculadora1 extends JFrame implements ActionListener {
     private JTextField numero1;
     private JTextField numero2;
     private JTextField resultado;
@@ -15,7 +15,7 @@ public class Calculadora0 extends JFrame implements ActionListener {
     private ButtonGroup operaciones;
     private JPanel botones;
 
-    public Calculadora0() {
+    public Calculadora1() {
         setTitle("Calculadora");
         setSize(800, 200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
