@@ -2,6 +2,8 @@ package view;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Ventana extends JFrame {
     private JPanel panelDatos;
@@ -86,4 +88,5 @@ public class Ventana extends JFrame {
     public JButton getResolver() {
         return resolver;
     }
+
 }

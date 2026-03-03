@@ -6,7 +6,7 @@ import view.Ventana;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CalculadoraController {
+public class CalculadoraController implements ActionListener{
 
     private Calcular model;
     private Ventana view;
@@ -14,13 +14,12 @@ public class CalculadoraController {
     public CalculadoraController(Calcular model, Ventana view) {
         this.model = model;
         this.view = view;
+        this.view.getResolver().addActionListener(this);
+    }
 
-        this.view.getResolver().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String resultado = model.calcularResultado(view.getA().getText(), view.getB().getText(), view.getC().getText());
-                view.setResultado(resultado);
-            }
-        });
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String resultado = model.calcularResultado(view.getA().getText(), view.getB().getText(), view.getC().getText());
+        view.setResultado(resultado);
     }
 }
