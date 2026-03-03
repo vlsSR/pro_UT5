@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class Calculadora2 extends JFrame implements ActionListener {
 
-        private final JPanel panelDatos, panelResolver;
+        private final JPanel panelDatos, panelResolver, panelResultado;
         private final JTextField a, b ,c;
         private final JLabel parte1, parte2, parte3, resultado;
         private final JButton resolver;
@@ -16,7 +16,7 @@ public class Calculadora2 extends JFrame implements ActionListener {
         setLayout(new GridLayout(3,1));
 
         panelDatos = new JPanel();
-        panelDatos.setLayout(new FlowLayout(FlowLayout.CENTER));
+        panelDatos.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 40));
 
 
         a = new JTextField(8);
@@ -35,7 +35,10 @@ public class Calculadora2 extends JFrame implements ActionListener {
         panelResolver.setLayout(new FlowLayout(FlowLayout.CENTER));
         resolver = new JButton("RESOLVER");
         resolver.addActionListener(this);
+        resolver.setPreferredSize(new Dimension(150,50));
 
+        panelResultado = new JPanel();
+        panelResultado.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 0));
         resultado = new JLabel();
 
         panelDatos.add(a);
@@ -45,9 +48,10 @@ public class Calculadora2 extends JFrame implements ActionListener {
         panelDatos.add(c);
         panelDatos.add(parte3);
         panelResolver.add(resolver);
+        panelResultado.add(resultado);
         this.add(panelDatos);
         this.add(panelResolver);
-        this.add(resultado);
+        this.add(panelResultado);
 
     }
 
