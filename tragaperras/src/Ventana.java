@@ -51,7 +51,7 @@ public class Ventana extends JFrame {
     private void initResultado() {
         panelResultado = new JPanel();
         panelResultado.setLayout(new FlowLayout(FlowLayout.CENTER,10, 20));
-        figuras = new JLabel("| ❤️ |   | 🔔 |   | 💎 |");
+        figuras = new JLabel("| ❤️ |   | 🔔 |   | 🍉 |");
         figuras.setFont(new Font("Fuente", Font.PLAIN, 50));
         panelResultado.add(figuras);
         panelResultado.setBackground(new Color(224, 224, 224));
@@ -63,7 +63,7 @@ public class Ventana extends JFrame {
         dinero = 10;
         dineroActual = new JLabel("Dinero actual: " +dinero);
         tresIguales = new JLabel("3 iguales = X10");
-        dosIguales = new JLabel("2 iguales = X3");
+        dosIguales = new JLabel("2 iguales = X2");
         ceroIguales = new JLabel("0 iguales = 0");
         dineroActual.setFont(new Font("Fuente", Font.BOLD, 20));
         tresIguales.setFont(new Font("Fuente", Font.BOLD, 20));
