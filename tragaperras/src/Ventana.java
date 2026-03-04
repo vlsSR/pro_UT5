@@ -31,7 +31,8 @@ public class Ventana extends JFrame {
         this.add(panelApuesta);
         this.add(panelApostar);
         this.add(panelColorAbajo);
-        setSize(1000, 800);
+        setSize(900, 800);
+        setTitle("DAM CASINO");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(7, 1));
         setVisible(true);
@@ -92,7 +93,7 @@ public class Ventana extends JFrame {
         introduceApuesta.setHorizontalAlignment(SwingConstants.CENTER);
         introduceApuesta.setFont(new Font("Fuente", Font.BOLD, 15));
 
-        apuesta = new JTextField(3);
+        apuesta = new JTextField(4);
         apuesta.setPreferredSize(new Dimension(0, 40));
 
         panelApuesta.add(introduceApuesta);
@@ -145,5 +146,29 @@ public class Ventana extends JFrame {
             panelColorArriba.add(panel);
         }
 
+    }
+
+    public JTextField getApuesta() {
+        return apuesta;
+    }
+
+    public JButton getApostar() {
+        return apostar;
+    }
+
+    public int getDinero() {
+        return dinero;
+    }
+
+    public void setDinero(int dinero) {
+        this.dinero = dinero;
+    }
+
+    public JLabel getFiguras() {
+        return figuras;
+    }
+
+    public JLabel getDineroActual() {
+        return dineroActual;
     }
 }
