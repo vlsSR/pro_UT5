@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MVCTemplate/MVCTemplate.iml" filepath="$PROJECT_DIR$/MVCTemplate/MVCTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadora1/calculadora1.iml" filepath="$PROJECT_DIR$/calculadora1/calculadora1.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadora2/calculadora2.iml" filepath="$PROJECT_DIR$/calculadora2/calculadora2.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadoraIMC/calculadoraIMC.iml" filepath="$PROJECT_DIR$/calculadoraIMC/calculadoraIMC.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadoraMVC/calculadoraMVC.iml" filepath="$PROJECT_DIR$/calculadoraMVC/calculadoraMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caldoraFacturaLuz/caldoraFacturaLuz.iml" filepath="$PROJECT_DIR$/caldoraFacturaLuz/caldoraFacturaLuz.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro_UT5.iml" filepath="$PROJECT_DIR$/pro_UT5.iml" />
       <module fileurl="file://$PROJECT_DIR$/tragaperras/tragaperras.iml" filepath="$PROJECT_DIR$/tragaperras/tragaperras.iml" />
     </modules>
