@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/calculadoraMVC/calculadoraMVC.iml" filepath="$PROJECT_DIR$/calculadoraMVC/calculadoraMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadoraTemperatura/calculadoraTemperatura.iml" filepath="$PROJECT_DIR$/calculadoraTemperatura/calculadoraTemperatura.iml" />
       <module fileurl="file://$PROJECT_DIR$/caldoraFacturaLuz/caldoraFacturaLuz.iml" filepath="$PROJECT_DIR$/caldoraFacturaLuz/caldoraFacturaLuz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplosSwing/ejemplosSwing.iml" filepath="$PROJECT_DIR$/ejemplosSwing/ejemplosSwing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestionTareas/gestionTareas.iml" filepath="$PROJECT_DIR$/gestionTareas/gestionTareas.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro_UT5.iml" filepath="$PROJECT_DIR$/pro_UT5.iml" />
       <module fileurl="file://$PROJECT_DIR$/tragaperras/tragaperras.iml" filepath="$PROJECT_DIR$/tragaperras/tragaperras.iml" />
     </modules>
